@@ -1,6 +1,6 @@
 var http = require('http');
 
-http.get('http://google.co.kr/',(res)=>{
+http.get('http://202.30.241.150:8000/cpsmsstat/smssv/auth/login.jsp',(res)=>{
 	var body = '';
 	res.on('data',(d)=>{
 		body += d;

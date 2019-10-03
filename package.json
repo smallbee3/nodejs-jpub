@@ -1,0 +1,25 @@
+{
+  "name": "jpub",
+  "version": "1.0.0",
+  "description": "SOURCE CODE",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.17.1",
+    "qs": "^6.8.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calmlake79/nodebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calmlake79/nodebook/issues"
+  },
+  "homepage": "https://github.com/calmlake79/nodebook#readme"
+}

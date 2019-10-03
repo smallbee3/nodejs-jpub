@@ -1,6 +1,6 @@
 const cluster = require('cluster');
 cluster.setupMaster({
-	exec: 'worker.js',
+	exec: './Chapter_07/worker.js',
 });
 
 var worker = cluster.fork();

@@ -6,7 +6,7 @@ fs.open ('test.txt' , 'w' ,(err, fd )=>{
 	if( err ) throw err;
 	
 	// 파일에 쓰기를 수행합니다.
-	fs.write( fd , "hello world" ,( err , written )=>{
+	fs.write( fd , "hello world", 4 ,( err , written )=>{
 		// 실패시에는 err 를 리턴하며, 성공시에는 쓰여진 바이트수를 리턴합니다.
 		if( err ) throw err;
 		console.log( written + " bytes Written");

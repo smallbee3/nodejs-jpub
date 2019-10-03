@@ -12,9 +12,12 @@ if (cluster.isMaster) {
 	});
 } else if (cluster.isWorker) {
 	const net = require('net');
-	var server = net.createServer((socket) => {});
+	// var server = net.createServer((socket) => {});
 
-	server.listen(8000);
+	// server.listen(8800);
+	net.createServer((socket) => {
+
+	}).listen(8800);
 
 	console.log( 2 );
 

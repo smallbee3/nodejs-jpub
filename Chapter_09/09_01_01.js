@@ -20,10 +20,14 @@ const server = http.createServer((req, res) => {
 		'cookie=test2; Expires='+new Date(new Date().getTime()+1000*86400).toUTCString()+";"]
 	);
 
+	// myway
+	res.write('sessions='+session_cookie+'; Expires='+new Date(new Date().getTime()+1000*86400).toUTCString()+"; HttpOnly;",
+	'cookie=test2; Expires='+new Date(new Date().getTime()+1000*86400).toUTCString()+";")
+	
 	res.end('Hello World\n');
 });
 
-server.listen(80, (err) => {
+server.listen(8800, (err) => {
 	if( err ){
 		console.log( err );
 	}

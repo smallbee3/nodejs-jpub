@@ -1,3 +1,4 @@
 setInterval(()=>{
   	console.log( "Now Time is ", new Date() );
-}, 5 * 1000 );
+  	console.log( "\033[36m" + new Date() + "\033[0m:");
+}, 1000 );

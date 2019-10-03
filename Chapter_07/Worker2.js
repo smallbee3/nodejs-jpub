@@ -1,5 +1,8 @@
+let num = 1;
+
 setInterval(()=>{
-	process.send('worker');
+	process.send('worker call ' + num);
+	num += 1;
 },1000);
 
 setTimeout(()=>{

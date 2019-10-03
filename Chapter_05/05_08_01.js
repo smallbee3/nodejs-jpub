@@ -10,8 +10,14 @@ https.get('https://nodejs.org/dist/latest-v5.x/docs/api/index.json',(res)=>{
 		body += d;
 	});
 	res.on('end',()=>{
+
+		console.log(1, body)
+
 		// 가져온 데이터를 JSON Object 형태로 변환하여 저장합니다.
 		var index_data = JSON.parse( body ).desc;
+
+		console.log(2, index_data)
+		console.log(22, JSON.parse( body ))
 
 		// 루프를 돌면서 페이지 데이터를 가져옵니다.
 		for( var i = 0 ; i < index_data.length ; i++ ){

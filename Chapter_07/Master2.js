@@ -1,13 +1,12 @@
 const cluster = require('cluster');
 cluster.setupMaster({
-	exec: 'worker.js',
+	exec: './Chapter_07/worker2.js',
 });
 
 var worker = cluster.fork();
 worker.on('message',(msg)=>{
 	console.log(msg);
-})
-.on('error',()=>{
+}).on('error',()=>{
 	console.log("ERROR");
 }).on('exit',(code, signal)=>{
 	if (signal) {

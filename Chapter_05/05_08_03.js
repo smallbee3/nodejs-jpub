@@ -15,6 +15,8 @@ https.get( url + 'index.json',(res)=>{
 		// 가져온 데이터를 JSON Object 형태로 변환하여 저장합니다.
 		var index_data = JSON.parse( body ).desc;
 
+		console.log(22, JSON.parse( body ))
+
 		// 루프를 돌면서 페이지 데이터를 가져옵니다.
 		for( var i = 0 ; i < index_data.length ; i++ ){
 		// 해당 데이터의 type 이 text 일 경우에만 데이터를 분석합니다.

@@ -9,7 +9,6 @@ fs.open ('test.txt' , 'a' ,(err, fd )=>{
 	fs.write( fd , "Update" , 4 ,( err , written )=>{
 		// 실패시에는 err 를 리턴하며, 성공시에는 쓰여진 바이트수를 리턴합니다.
 		if( err ) throw err;
-
 		console.log( written + " bytes Written");
 
 		fs.close( fd ,()=>{

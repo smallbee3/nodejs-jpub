@@ -1,5 +1,5 @@
 console.log( 1 );
-var a = require("./subfile.js");
+var a = require("./subfile01.js");
 console.log( 2 );
-var b = require("./subfile.js");
+var b = require("./subfile01.js");
 console.log( 3 );

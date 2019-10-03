@@ -29,5 +29,5 @@ if (cluster.isMaster) {
 		res.end('hello world\n');
 
 		process.send({ cmd: 'notifyRequest' });
-	}).listen(8000);
+	}).listen(8800);
 }

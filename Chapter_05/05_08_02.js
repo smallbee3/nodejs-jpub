@@ -15,6 +15,8 @@ https.get( url +  CrawlData[ 0 ].link ,(res)=>{
 		// 가져온 데이터를 JSON Object 형태로 변환하여 저장합니다.
 		var index_data = JSON.parse( body ).modules[ 0 ].methods;
 
+		console.log(22, JSON.parse( body ))
+
 		// 루프를 돌면서 메소드를 하나씩 확인합니다.
 		for( var i = 0 ; i < index_data.length ; i++ ){
 		// 개별 메소드들에 대해서 필요한 부분만큼의 데이터를 읽어서 저장합니다.
