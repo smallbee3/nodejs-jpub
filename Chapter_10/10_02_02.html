@@ -12,7 +12,8 @@ var CallLongPoll = ()=>{
 		type:'post',
 		url:'/longpolling',
 		success:( data )=>{
-			console.log( "END1" );
+			console.log(1, "END1" );
+			console.log(2,  data );
 			CallLongPoll();
 		}
 	});

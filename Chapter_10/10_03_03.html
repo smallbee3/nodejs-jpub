@@ -11,18 +11,21 @@
 	var socket = io.connect('http://localhost:3000/chat');
 
 	socket.on('connect',()=>{
-		console.log("connect");
+		console.log(socket.id, "connect");
 	})
 	.on('disconnect',()=>{
-		console.log('disconnect');
+		console.log(socket.id, 'disconnect');
 	})
 	.on('msg',(data)=>{
+		console.log(1, data)
+		console.log(11, $("textarea").val())
 		$("textarea")
 		.val( $("textarea").val()+"\n"+ data )
 		.scrollTop( $("textarea")[0].scrollHeight );
 	});
 
 	$("form").submit(()=>{
+		console.log(2, $("form input").val())
 		socket.emit('msg', $("form input").val() );
 		$("form input").val("");
 		return false;

@@ -1,19 +1,19 @@
 var main = ()=>{
 	for( var i = 0 ; i < 10 ; i++ ){
-		Crawling();
+		Crawling(i);
 	}
 };
 
-var Crawling = ()=>{
+var Crawling = (i)=>{
 	setTimeout(()=>{
-		console.log("Get Page");
-		GetPage();
+		console.log("Get Page " + i);
+		GetPage(i);
 	},1000);
 };
 
 var page = 0;
-var GetPage = ()=>{
-	console.log("Page Process: %d",page);
+var GetPage = (i)=>{
+	console.log("Page Process: %d - %d",page, i);
 	page++;
 	if( page == 10 ){
 		console.log("Process Ended");

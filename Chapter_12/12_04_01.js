@@ -2,11 +2,13 @@ process.env.TZ = 'Asia/Seoul';
 
 console.log( "\033[36m"+new Date()+"\033[0m: Node Version: [ "+process.version+" ]" );
 console.log( "\033[36m"+new Date()+"\033[0m: ["+__filename+"] Started." );
+console.log( new Date()+": Node Version: [ "+process.version+" ]" );
+console.log( new Date()+": ["+__filename+"] Started." );
 
 Object.defineProperty(global, '__stack', {
    get:()=>{
        var orig = Error.prepareStackTrace;
-       Error.prepareStackTrace =(_, stack)=>{ return stack; };
+       Error.prepareStackTrace = (_, stack)=>{ return stack; };
        var err = new Error;
        Error.captureStackTrace(err, arguments.callee);
        var stack = err.stack;

@@ -1,0 +1,4 @@
+Thu Sep 19 2019 22:25:49 GMT+0900 (Korean Standard Time): [/Users/clark/study/nodejs/Jpub/Chapter_12/12_04_01.js] Line: 61 {"type":"error","text":"something error","code":"code01"}
+Thu Sep 19 2019 22:48:39 GMT+0900 (Korean Standard Time): [/Users/clark/study/nodejs/Jpub/Chapter_12/12_04_01.js] Line: 63 {"type":"error","text":"something error","code":"code01"}
+Thu Sep 19 2019 22:49:14 GMT+0900 (Korean Standard Time): [/Users/clark/study/nodejs/Jpub/Chapter_12/12_04_01.js] Line: 63 {"type":"error","text":"something error","code":"code01"}
+Thu Sep 19 2019 23:15:13 GMT+0900 (Korean Standard Time): [/Users/clark/study/nodejs/Jpub/Chapter_12/12_04_01.js] Line: 63 {"type":"error","text":"something error","code":"code01"}

@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
 	res.end('index');
 });
 
-server.listen( 80 , (err) => {
+server.listen( 8800 , (err) => {
 	if( err ){
 		console.log( err );
 	}

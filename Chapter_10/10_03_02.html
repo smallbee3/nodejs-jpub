@@ -5,16 +5,16 @@
 	var socket = io.connect('http://localhost:3000/chat');
 
 	socket.on('connect',()=>{
-		console.log("connect");
+		console.log("connect", new Date() );
 
 		socket.emit('msg','first connect');
 	})
 	.on('msg',(data)=>{
-		console.log( data );
+		console.log(1, data );
 
 		setTimeout(()=>{
-			console.log( 'Send to Server'+new Date() );
-			socket.emit('msg','Send to Server'+new Date() );
+			console.log(2, 'Send to Server' + new Date() );
+			socket.emit('msg','Send to Server' + new Date() );
 		},1000);
 	})
 	.on('disconnect',()=>{console.log(1);});
