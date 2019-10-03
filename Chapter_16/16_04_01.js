@@ -6,3 +6,8 @@ var upload = multer();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+
+app.listen(8800, () => {
+    console.log("Start");
+})

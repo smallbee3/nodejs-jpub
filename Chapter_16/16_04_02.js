@@ -1,3 +1,13 @@
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser');
+var multer = require('multer');
+var upload = multer();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
 var stack_list = [];
 
 app.route('/stack/:stack_name')
@@ -21,7 +31,15 @@ app.route('/stack/:stack_name')
        stack_list[ stack_name ] = [ req.body ];
    }
 
+   console.log(1, stack_list);
+   console.log(2, stack_list[ stack_name ]);
+
    res.json({
        result:'ok'
    });
 });
+
+
+app.listen(8800, () => {
+    console.log("Start");
+})
